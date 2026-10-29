@@ -1,0 +1,7 @@
+node_modules/
+report-builder/out/
+__pycache__/
+*.pyc
+feeds/
+.env
+*.env

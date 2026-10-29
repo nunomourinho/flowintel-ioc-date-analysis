@@ -1,0 +1,235 @@
+{
+ "fi_version": "4.0.0",
+ "fi_commit": "8a8e8c2, 2026-10-28",
+ "asis_missing": 338907,
+ "long_values": 12872,
+ "max_len": 52679,
+ "tests": {
+  "summary_sentence": "The automated test suite (654 tests) passed 653; the single failure is a concurrency test showing that two simultaneous duplicate alert ingests lose one occurrence count.",
+  "key": "653 of 654 passed (1 failed)",
+  "row": "653 passed, 1 failed (tests/alerts/test_alert_occurrence_count_race.py: occurrence_count 2 instead of 3 after concurrent duplicate ingests, a lost-update race). Run with 4 parallel workers (pytest -n 4, SQLite test database, 1 h 50 min); line coverage 44%."
+ },
+ "environment": [
+  [
+   "Hypervisor",
+   "Proxmox VE 9.2.24 (kernel 7.0.14-26-pve), MacBook Pro 15,1"
+  ],
+  [
+   "Virtual machine",
+   "VM 106 'flowintel-test': 4 vCPU (host CPU), 8 GB RAM, 60 GB disk (LVM-thin), virtio NIC on vmbr0 (NAT, DHCP 10.10.98.131)"
+  ],
+  [
+   "Guest OS",
+   "Ubuntu 24.04.5 LTS server cloud image, kernel 6.8.0-147-generic, cloud-init user 'flowintel'"
+  ],
+  [
+   "Flowintel",
+   "4.0.0, commit 8a8e8c2 (2026-10-28), development launch (./launch.sh -l) on port 7006"
+  ],
+  [
+   "Database",
+   "PostgreSQL 16.15 (database 'flowintel', 1.6 GB after import)"
+  ],
+  [
+   "Session store",
+   "Valkey 7.2.13 with password"
+  ],
+  [
+   "Runtime",
+   "Python 3.12.3 venv (uv), Flask 3.1.3, SQLAlchemy 2.1.6, PyMISP 2.5.34.4, misp-modules 3.1.1, Node.js 26.13.0, Bun, pandoc 3.7"
+  ],
+  [
+   "Reference data",
+   "181 MISP taxonomies (13,051 tags), 131 galaxies (54,731 clusters), MISP objects submodule"
+  ],
+  [
+   "Source catalogue",
+   "MISP feed-metadata/defaults.json (branch 2.5), 108 feeds, downloaded 29 Oct 2026 (1.6 GB)"
+  ]
+ ],
+ "install_steps": [
+  [
+   "Created VM 106 from the Ubuntu 24.04 cloud image with cloud-init (SSH key, DHCP) and updated the system.",
+   "qm create 106 … ; qm set 106 --scsi0 local-thin-storage:0,import-from=noble-server-cloudimg-amd64.img ; apt full-upgrade"
+  ],
+  [
+   "Installed PostgreSQL 16 and Valkey; created the database and role; set a Valkey password.",
+   "apt install postgresql valkey-server ; CREATE USER flowintel … ; CREATE DATABASE flowintel OWNER flowintel"
+  ],
+  [
+   "Cloned the repository and copied the default configuration files.",
+   "git clone https://github.com/flowintel/flowintel ; cp conf/config.py.default conf/config.py ; cp conf/config_module.py.default conf/config_module.py"
+  ],
+  [
+   "Exported the configuration as environment variables (SECRET_KEY, DB_*, VALKEY_*, FLOWINTEL_APP_HOST=0.0.0.0).",
+   "~/flowintel.env (mode 600)"
+  ],
+  [
+   "Ran the official installer: system packages, pandoc, Node/nvm, Mermaid CLI, Python venv (uv), Bun assets, git submodules, database initialisation, taxonomies, galaxies, MISP modules and default cases.",
+   "./install.sh   (exit code 0, about 40 minutes)"
+  ],
+  [
+   "Started the application.",
+   "./launch.sh -l   (Flask, misp-modules, notification and MISP-sync workers in screen sessions)"
+  ],
+  [
+   "Loaded the bundled community test data through the API.",
+   "./launch.sh -tdc <admin_api_key>"
+  ],
+  [
+   "Installed the development requirements and ran the automated test suite.",
+   "uv pip install -r requirements-dev.txt ; FLOWINTEL_APP_ENV=testing python -m pytest -n 4 -p no:randomly --cov=./app"
+  ]
+ ],
+ "install_issues": [
+  [
+   "misp__attribute.value is VARCHAR(255). Any IoC value longer than 255 characters makes POST /api/case/create_with_event fail with HTTP 500 (StringDataRightTruncation on PostgreSQL). Because every attribute is committed separately, the case remains in the database half-imported. 3,530 cases (MISP events and CSV/free-text chunks) were affected; 338,907 IoCs (9.6%) were missing.",
+   "Critical for TI imports. Test workaround: column changed to TEXT, the B-tree index on value replaced by a hash index, incomplete cases deleted and re-created through the API (3,530 cases). Afterwards 0 differences against the sources. SQLite does not enforce the length, so the problem only appears with PostgreSQL/MariaDB."
+  ],
+  [
+   "MISP object-level first_seen/last_seen are not stored (table case__misp__object has no date columns).",
+   "Date information lost for objects, e.g. all 1,801 dated objects of NOCACTI Intrusion and 859 of Rectifyq 2026. Not worked around."
+  ],
+  [
+   "Bulk import is slow: one INSERT + COMMIT + SELECT of the case per attribute, about 90 IoCs/s per application process (database initialisation of taxonomies and galaxies took about 35 minutes for the same reason).",
+   "Test workaround: PostgreSQL synchronous_commit=off and four extra application processes on ports 7007–7010 sharing the database (about 290 IoCs/s). The full import of 3.5 million IoCs took about 3 hours."
+  ],
+  [
+   "No index on misp__attribute.case_misp_object_id.",
+   "Deleting cases/objects scans the whole attribute table. Index added for the test."
+  ],
+  [
+   "install.sh installs only requirements.txt, so ./launch.sh -t fails with 'No module named pytest'.",
+   "Installed requirements-dev.txt."
+  ],
+  [
+   "launch.sh uses the shebang '#!/bin/bash -i' (interactive shell) and therefore reads ~/.bashrc. With DB_* variables exported from .bashrc the test suite connects to PostgreSQL ('database flowintel_test_master does not exist') and every test errors at setup.",
+   "Configuration removed from .bashrc for the test run. The '_test_' name guard in tests/conftest.py prevents the production database from being dropped, but the behaviour is fragile."
+  ],
+  [
+   "Test suite: test_concurrent_duplicate_ingests_count_every_occurrence fails (occurrence_count 2, expected 3).",
+   "Concurrent ingests of the same alert can lose an occurrence count (lost update). Minor for this analysis; worth reporting upstream."
+  ],
+  [
+   "install.sh runs 'nvm install node 20.19.2', which installs the latest Node.js (26.13.0), not 20.19.2.",
+   "No functional impact seen; Node version not pinned as intended."
+  ],
+  [
+   "The development launch runs Flask in DEBUG mode with the Werkzeug debugger; with FLOWINTEL_APP_HOST=0.0.0.0 it is reachable from the network.",
+   "Acceptable only on an isolated test network (here NAT behind the Proxmox host). Use ./launch.sh -p with gunicorn behind nginx for real use."
+  ],
+  [
+   "Application processes grew to about 1.4 GB RAM each during the bulk import.",
+   "Observation; the 8 GB VM was sufficient."
+  ],
+  [
+   "'apt install valkey' in install.sh resolves to valkey-server on Ubuntu 24.04.",
+   "No issue."
+  ]
+ ],
+ "functional": [
+  [
+   "Web UI login page (from the Proxmox host)",
+   "HTTP 200 at http://10.10.98.131:7006"
+  ],
+  [
+   "Default administrator (admin@admin.admin)",
+   "Created by the installer; API key used for all API calls"
+  ],
+  [
+   "Taxonomies, galaxies, MISP objects, MISP modules",
+   "Loaded (181 taxonomies, 131 galaxies); misp-modules server started by launch.sh"
+  ],
+  [
+   "Bundled test data (-tdc)",
+   "Organisations and users created; the 4 template cases were already created by install.sh (a second -tdcc would only duplicate titles)"
+  ],
+  [
+   "API case creation from MISP events",
+   "Works (16,955 events imported); fails with HTTP 500 for values > 255 characters (see 4.2)"
+  ],
+  [
+   "Preservation of attribute first_seen/last_seen",
+   "Exact for all 14 MISP-format sources (0 differences)"
+  ],
+  [
+   "Automated test suite (./launch.sh -t, 654 tests)",
+   "653 passed, 1 failed (tests/alerts/test_alert_occurrence_count_race.py: occurrence_count 2 instead of 3 after concurrent duplicate ingests, a lost-update race). Run with 4 parallel workers (pytest -n 4, SQLite test database, 1 h 50 min); line coverage 44%."
+  ]
+ ],
+ "findings": [
+  [
+   "Only a minority of TI sources provide IoC lifetimes",
+   [
+    "Of the 14 usable MISP-format sources, only the two NOCACTI feeds give both first_seen and last_seen for every IoC. Infoblox gives a start date for every IoC (2021-01-01 to 2026-10-15) but no end date. Four sources (Rösti, PrecisionSec, TweetFeed, SiberKapan; 631,295 IoCs) give no attribute dates at all.",
+    "Across all MISP-format sources only 1.1% of IoCs have both dates. Statistical work on IoC lifetime is therefore possible only for a few sources, and the results are dominated by NOCACTI and Rectifyq 2026."
+   ]
+  ],
+  [
+   "Dates describe very different things per source",
+   [
+    "NOCACTI Intrusion: median lifetime 0.01 days (about 15 minutes) – a single sighting. NOCACTI Adversary Infrastructure: median 39 days, P90 330 days – infrastructure activity. CIRCL OSINT: median 44 days. Rectifyq 2026: median 0.05 days but a long tail up to 18 years (6,671 days).",
+    "CIRCL OSINT has last_seen on 51% of IoCs but almost always without first_seen; these come from 288 daily 'Maltrail IOC for <date>' events where last_seen is the publication day. Counting 'end dates' without checking their origin would overstate the available lifetime information."
+   ]
+  ],
+  [
+   "CSV/free-text feeds lose their dates",
+   [
+    "None of the 1.57 million CSV/free-text IoCs has a date in Flowintel, even though most lines of the dataplane.org, abuse.ch SSLBL, James Brine, Feodo, ipspamlist, MalSilo and Phishtank feeds contain dates. This follows MISP's feed model (values only), not a Flowintel defect, but it means most IP/domain reputation data enters without any temporal information."
+   ]
+  ],
+  [
+   "Flowintel defects affecting TI imports",
+   [
+    "The 255-character limit on attribute values combined with per-attribute commits causes failed and half-imported cases on PostgreSQL. In this test it silently removed 9.6% of the IoCs, including dated ones, until it was worked around.",
+    "Object-level first_seen/last_seen are discarded. The bulk import path is slow (about 90 IoCs/s per process)."
+   ]
+  ]
+ ],
+ "recommendations": [
+  "Report to the Flowintel project: change misp__attribute.value to TEXT (with a hash or expression index), wrap create_with_event in a single transaction so that a failure does not leave partial cases, and store object-level first_seen/last_seen.",
+  "For TI work with Flowintel, prefer sources that provide attribute first_seen/last_seen (NOCACTI, Infoblox for start dates, Rectifyq 2026, CIRCL for selected events) and document what each source's dates mean.",
+  "If temporal analysis of reputation feeds is needed, add a custom import that maps the date columns of CSV feeds (dataplane.org, abuse.ch, Feodo, ipspamlist, MalSilo, Phishtank) to first_seen/last_seen.",
+  "For bulk imports, batch attribute inserts in Flowintel or import through MISP and sync, and plan for several hours per million IoCs with the current code.",
+  "Run Flowintel in production mode (./launch.sh -p, gunicorn behind nginx with TLS); do not expose the development server.",
+  "Add requirements-dev.txt to the documented test procedure and avoid relying on an interactive shell in launch.sh."
+ ],
+ "limitations": [
+  "Snapshot of 29 October 2026: feed contents change daily; CSV/free-text feeds in particular contain only current entries.",
+  "29 catalogue entries are not analysed: 25 could not be downloaded (gone, forbidden, timeout) and 4 returned an HTML page or empty content; some may work with registration or from another network.",
+  "CSV/free-text parsing re-implements MISP's rules (value columns, delimiters, exclusion regex, free-text type detection); small differences in type detection compared with MISP are possible. Duplicate IoCs within a source were removed.",
+  "Dates were analysed as stored in attribute first_seen/last_seen. Dates in event metadata, object-level fields, object attributes or comments are reported in table 6.3 but not used as IoC dates.",
+  "The schema workaround (TEXT column, hash index, extra index, synchronous_commit=off) changes the tested system; figures for the unmodified schema are given in section 6.4.",
+  "The development launch mode was used; production mode (gunicorn) was not tested."
+ ],
+ "appendix_b": [
+  [
+   "Download all feeds (VM)",
+   "python3 -I tools/fi_fetch_feeds.py defaults.json feeds"
+  ],
+  [
+   "Native statistics from the raw feeds",
+   "python3 -I tools/fi_raw_stats.py feeds        # -> raw_stats.json"
+  ],
+  [
+   "Import into Flowintel (one process per source group and app instance)",
+   "python3 -I tools/fi_import_feeds.py feeds --key <API key> --url http://127.0.0.1:7006 --only <ids> --log import_X.jsonl"
+  ],
+  [
+   "Schema workaround (test only)",
+   "DROP INDEX ix_misp__attribute_value;\nALTER TABLE misp__attribute ALTER COLUMN value TYPE text;\nCREATE INDEX ix_misp__attribute_value ON misp__attribute USING hash (value);\nCREATE INDEX ix_misp__attribute_case_misp_object_id ON misp__attribute (case_misp_object_id);\nALTER SYSTEM SET synchronous_commit = off;"
+  ],
+  [
+   "Repair / verification of incomplete cases",
+   "flowintel/env/bin/python -I tools/fi_repair_partial.py feeds --key <API key> --url http://127.0.0.1:7006 --only <ids>"
+  ],
+  [
+   "Statistics from the Flowintel database (read-only)",
+   "flowintel/env/bin/python tools/fi_stats.py      # -> flowintel_stats.json"
+  ],
+  [
+   "Charts and report",
+   "venv/bin/python make_summary.py data out ; python3 make_notes.py out/summary.json facts.json out/notes.json ; node gen_report.js out report.docx"
+  ]
+ ]
+}

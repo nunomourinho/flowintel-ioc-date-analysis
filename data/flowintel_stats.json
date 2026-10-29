@@ -1,0 +1,2768 @@
+{
+ "-1": {
+  "cases": 4,
+  "attributes": 3,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 3,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "md5",
+    1
+   ],
+   [
+    "sha1",
+    1
+   ],
+   [
+    "sha256",
+    1
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 3,
+  "in_objects": 3
+ },
+ "1": {
+  "cases": 1681,
+  "attributes": 588220,
+  "first_seen": 6894,
+  "last_seen": 300638,
+  "both": 6384,
+  "neither": 287072,
+  "first_only": 510,
+  "last_only": 294254,
+  "inverted": 0,
+  "fs_min": "2014-05-23T00:00:00",
+  "fs_max": "2026-05-13T21:15:00",
+  "ls_min": "2020-01-27T00:00:00",
+  "ls_max": "2026-08-14T10:00:03",
+  "dur_days_median": 44.0,
+  "dur_days_mean": 37.66,
+  "dur_days_p90": 56.0,
+  "dur_days_max": 56.0,
+  "dur_zero": 574,
+  "types_top": [
+   [
+    "domain",
+    298493
+   ],
+   [
+    "hostname",
+    41538
+   ],
+   [
+    "ip-dst",
+    40302
+   ],
+   [
+    "md5",
+    38768
+   ],
+   [
+    "sha256",
+    34390
+   ],
+   [
+    "sha1",
+    24042
+   ],
+   [
+    "url",
+    22914
+   ],
+   [
+    "link",
+    20754
+   ]
+  ],
+  "fs_years": {
+   "2014": 4,
+   "2016": 3,
+   "2017": 15,
+   "2018": 25,
+   "2019": 7,
+   "2020": 6390,
+   "2021": 5,
+   "2022": 171,
+   "2023": 50,
+   "2024": 133,
+   "2025": 82,
+   "2026": 9
+  },
+  "ids_flag": 492132,
+  "in_objects": 78421
+ },
+ "2": {
+  "cases": 435,
+  "attributes": 28915,
+  "first_seen": 329,
+  "last_seen": 5,
+  "both": 5,
+  "neither": 28586,
+  "first_only": 324,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2014-05-23T00:00:00",
+  "fs_max": "2024-06-01T00:00:00",
+  "ls_min": "2022-06-14T00:00:00",
+  "ls_max": "2022-11-10T00:00:00",
+  "dur_days_median": 15.0,
+  "dur_days_mean": 17.0,
+  "dur_days_p90": 48.0,
+  "dur_days_max": 48.0,
+  "dur_zero": 2,
+  "types_top": [
+   [
+    "sha256",
+    7301
+   ],
+   [
+    "url",
+    5461
+   ],
+   [
+    "domain",
+    4107
+   ],
+   [
+    "md5",
+    3404
+   ],
+   [
+    "ip-dst",
+    2115
+   ],
+   [
+    "sha1",
+    1699
+   ],
+   [
+    "filename",
+    1255
+   ],
+   [
+    "hostname",
+    1074
+   ]
+  ],
+  "fs_years": {
+   "2014": 4,
+   "2016": 26,
+   "2017": 2,
+   "2018": 3,
+   "2019": 2,
+   "2020": 2,
+   "2021": 38,
+   "2022": 171,
+   "2023": 70,
+   "2024": 11
+  },
+  "ids_flag": 25474,
+  "in_objects": 2235
+ },
+ "3": {
+  "cases": 1,
+  "attributes": 524,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 524,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    524
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 524,
+  "in_objects": 0
+ },
+ "4": {
+  "cases": 1,
+  "attributes": 2063,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 2063,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    2063
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 2063,
+  "in_objects": 0
+ },
+ "5": {
+  "cases": 1,
+  "attributes": 9838,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 9838,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    9838
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 9838,
+  "in_objects": 0
+ },
+ "6": {
+  "cases": 1,
+  "attributes": 22686,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 22686,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    22490
+   ],
+   [
+    "domain",
+    184
+   ],
+   [
+    "ip-dst",
+    12
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 22686,
+  "in_objects": 0
+ },
+ "7": {
+  "cases": 2,
+  "attributes": 54073,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 54073,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    54073
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 54073,
+  "in_objects": 0
+ },
+ "9": {
+  "cases": 1,
+  "attributes": 1731,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 1731,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    889
+   ],
+   [
+    "sha256",
+    842
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 1731,
+  "in_objects": 0
+ },
+ "10": {
+  "cases": 4,
+  "attributes": 157414,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 157414,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    157414
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 157414,
+  "in_objects": 0
+ },
+ "11": {
+  "cases": 1,
+  "attributes": 5,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 5,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    5
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 5,
+  "in_objects": 0
+ },
+ "12": {
+  "cases": 1,
+  "attributes": 300,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 300,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    300
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 300,
+  "in_objects": 0
+ },
+ "13": {
+  "cases": 1,
+  "attributes": 4657,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 4657,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    4657
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 4657,
+  "in_objects": 0
+ },
+ "16": {
+  "cases": 1,
+  "attributes": 15000,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 15000,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    15000
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 15000,
+  "in_objects": 0
+ },
+ "17": {
+  "cases": 1,
+  "attributes": 609,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 609,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    609
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 609,
+  "in_objects": 0
+ },
+ "18": {
+  "cases": 1,
+  "attributes": 27011,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 27011,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    27011
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 27011,
+  "in_objects": 0
+ },
+ "19": {
+  "cases": 1,
+  "attributes": 2416,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 2416,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    2416
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 2416,
+  "in_objects": 0
+ },
+ "20": {
+  "cases": 1,
+  "attributes": 10482,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 10482,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    10482
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 10482,
+  "in_objects": 0
+ },
+ "21": {
+  "cases": 1,
+  "attributes": 367,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 367,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    367
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 367,
+  "in_objects": 0
+ },
+ "22": {
+  "cases": 1,
+  "attributes": 7530,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 7530,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    7530
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 7530,
+  "in_objects": 0
+ },
+ "23": {
+  "cases": 1,
+  "attributes": 101,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 101,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    101
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 101,
+  "in_objects": 0
+ },
+ "24": {
+  "cases": 1,
+  "attributes": 34078,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 34078,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    34078
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 34078,
+  "in_objects": 0
+ },
+ "25": {
+  "cases": 1,
+  "attributes": 20675,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 20675,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    20675
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 20675,
+  "in_objects": 0
+ },
+ "26": {
+  "cases": 1,
+  "attributes": 6365,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 6365,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    6365
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 6365,
+  "in_objects": 0
+ },
+ "27": {
+  "cases": 2,
+  "attributes": 52163,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 52163,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    52163
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 52163,
+  "in_objects": 0
+ },
+ "28": {
+  "cases": 1,
+  "attributes": 422,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 422,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    422
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 422,
+  "in_objects": 0
+ },
+ "29": {
+  "cases": 1,
+  "attributes": 9126,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 9126,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    9126
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 9126,
+  "in_objects": 0
+ },
+ "30": {
+  "cases": 2,
+  "attributes": 50903,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 50903,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    50903
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 50903,
+  "in_objects": 0
+ },
+ "32": {
+  "cases": 1,
+  "attributes": 101,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 101,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    101
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 101,
+  "in_objects": 0
+ },
+ "33": {
+  "cases": 1,
+  "attributes": 11087,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 11087,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "sha1",
+    11087
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 11087,
+  "in_objects": 0
+ },
+ "34": {
+  "cases": 1,
+  "attributes": 444,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 444,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "sha1",
+    444
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 444,
+  "in_objects": 0
+ },
+ "35": {
+  "cases": 1,
+  "attributes": 269,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 269,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    269
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 269,
+  "in_objects": 0
+ },
+ "36": {
+  "cases": 1,
+  "attributes": 4880,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 4880,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    4880
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 4880,
+  "in_objects": 0
+ },
+ "44": {
+  "cases": 1,
+  "attributes": 5,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 5,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    5
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 5,
+  "in_objects": 0
+ },
+ "45": {
+  "cases": 1,
+  "attributes": 2,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 2,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    2
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 2,
+  "in_objects": 0
+ },
+ "46": {
+  "cases": 1,
+  "attributes": 8,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 8,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    8
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 8,
+  "in_objects": 0
+ },
+ "47": {
+  "cases": 1,
+  "attributes": 4,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 4,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "domain",
+    4
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 4,
+  "in_objects": 0
+ },
+ "48": {
+  "cases": 1,
+  "attributes": 36,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 36,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "md5",
+    12
+   ],
+   [
+    "sha1",
+    12
+   ],
+   [
+    "sha256",
+    12
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 36,
+  "in_objects": 0
+ },
+ "50": {
+  "cases": 3,
+  "attributes": 144576,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 144576,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    144576
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 144576,
+  "in_objects": 0
+ },
+ "51": {
+  "cases": 1,
+  "attributes": 38101,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 38101,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    38101
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 38101,
+  "in_objects": 0
+ },
+ "52": {
+  "cases": 1,
+  "attributes": 19707,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 19707,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    19707
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 19707,
+  "in_objects": 0
+ },
+ "53": {
+  "cases": 1,
+  "attributes": 11426,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 11426,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    11426
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 11426,
+  "in_objects": 0
+ },
+ "54": {
+  "cases": 1,
+  "attributes": 5728,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 5728,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    5728
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 5728,
+  "in_objects": 0
+ },
+ "55": {
+  "cases": 1,
+  "attributes": 2148,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 2148,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    2148
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 2148,
+  "in_objects": 0
+ },
+ "56": {
+  "cases": 1,
+  "attributes": 545,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 545,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    545
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 545,
+  "in_objects": 0
+ },
+ "57": {
+  "cases": 1,
+  "attributes": 93,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 93,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    93
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 93,
+  "in_objects": 0
+ },
+ "59": {
+  "cases": 1,
+  "attributes": 3259,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 3259,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "vulnerability",
+    3259
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 3259,
+  "in_objects": 0
+ },
+ "65": {
+  "cases": 1,
+  "attributes": 2267,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 2267,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    2267
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 2267,
+  "in_objects": 0
+ },
+ "66": {
+  "cases": 1,
+  "attributes": 5077,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 5077,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    5077
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 5077,
+  "in_objects": 0
+ },
+ "67": {
+  "cases": 1,
+  "attributes": 9951,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 9951,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    9951
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 9951,
+  "in_objects": 0
+ },
+ "69": {
+  "cases": 1,
+  "attributes": 12608,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 12608,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    12608
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 12608,
+  "in_objects": 0
+ },
+ "70": {
+  "cases": 3,
+  "attributes": 125533,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 125533,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "domain",
+    125533
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 125533,
+  "in_objects": 0
+ },
+ "74": {
+  "cases": 47,
+  "attributes": 269362,
+  "first_seen": 269362,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 0,
+  "first_only": 269362,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2021-01-01T00:00:00",
+  "fs_max": "2026-10-15T00:00:00",
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "domain",
+    268761
+   ],
+   [
+    "ip-dst",
+    360
+   ],
+   [
+    "url",
+    179
+   ],
+   [
+    "email-src",
+    31
+   ],
+   [
+    "sha256",
+    30
+   ],
+   [
+    "filename|sha256",
+    1
+   ]
+  ],
+  "fs_years": {
+   "2021": 22819,
+   "2022": 86670,
+   "2023": 38900,
+   "2024": 48827,
+   "2025": 55003,
+   "2026": 17143
+  },
+  "ids_flag": 269362,
+  "in_objects": 0
+ },
+ "75": {
+  "cases": 1,
+  "attributes": 314,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 314,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    156
+   ],
+   [
+    "sha256",
+    109
+   ],
+   [
+    "md5",
+    48
+   ],
+   [
+    "sha1",
+    1
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 314,
+  "in_objects": 0
+ },
+ "76": {
+  "cases": 1,
+  "attributes": 1378,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 1378,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    752
+   ],
+   [
+    "domain",
+    626
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 1378,
+  "in_objects": 0
+ },
+ "77": {
+  "cases": 1,
+  "attributes": 20907,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 20907,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    20907
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 20907,
+  "in_objects": 0
+ },
+ "78": {
+  "cases": 12,
+  "attributes": 550301,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 550301,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "domain",
+    550299
+   ],
+   [
+    "url",
+    2
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 550301,
+  "in_objects": 0
+ },
+ "79": {
+  "cases": 1,
+  "attributes": 20,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 20,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "md5",
+    20
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 20,
+  "in_objects": 0
+ },
+ "80": {
+  "cases": 1,
+  "attributes": 1632,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 1632,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    1632
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 1632,
+  "in_objects": 0
+ },
+ "81": {
+  "cases": 1,
+  "attributes": 1388,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 1388,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "btc",
+    1388
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 1388,
+  "in_objects": 0
+ },
+ "82": {
+  "cases": 1,
+  "attributes": 31,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 31,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "sha1",
+    31
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 31,
+  "in_objects": 0
+ },
+ "83": {
+  "cases": 10491,
+  "attributes": 428536,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 428536,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "domain",
+    134209
+   ],
+   [
+    "sha256",
+    95901
+   ],
+   [
+    "url",
+    56438
+   ],
+   [
+    "ip-dst",
+    49999
+   ],
+   [
+    "md5",
+    32962
+   ],
+   [
+    "filename",
+    25114
+   ],
+   [
+    "sha1",
+    19502
+   ],
+   [
+    "port",
+    5510
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 367125,
+  "in_objects": 80967
+ },
+ "87": {
+  "cases": 1,
+  "attributes": 30756,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 30756,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-src",
+    30756
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 30756,
+  "in_objects": 0
+ },
+ "91": {
+  "cases": 3,
+  "attributes": 6419,
+  "first_seen": 6419,
+  "last_seen": 6419,
+  "both": 6419,
+  "neither": 0,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2026-09-30T23:30:05",
+  "fs_max": "2026-10-29T04:19:12",
+  "ls_min": "2026-09-30T23:30:26",
+  "ls_max": "2026-10-29T04:28:47",
+  "dur_days_median": 0.01,
+  "dur_days_mean": 0.37,
+  "dur_days_p90": 0.02,
+  "dur_days_max": 26.75,
+  "dur_zero": 144,
+  "types_top": [
+   [
+    "text",
+    2518
+   ],
+   [
+    "ip-src",
+    1912
+   ],
+   [
+    "counter",
+    1871
+   ],
+   [
+    "sha256",
+    97
+   ],
+   [
+    "url",
+    9
+   ],
+   [
+    "domain",
+    8
+   ],
+   [
+    "md5",
+    4
+   ]
+  ],
+  "fs_years": {
+   "2026": 6419
+  },
+  "ids_flag": 1801,
+  "in_objects": 6419
+ },
+ "92": {
+  "cases": 1,
+  "attributes": 1060,
+  "first_seen": 1060,
+  "last_seen": 1060,
+  "both": 1060,
+  "neither": 0,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2025-11-23T05:18:15",
+  "fs_max": "2026-10-29T00:00:04",
+  "ls_min": "2026-10-01T00:00:04",
+  "ls_max": "2026-10-29T00:00:04",
+  "dur_days_median": 39.0,
+  "dur_days_mean": 90.93,
+  "dur_days_p90": 329.53,
+  "dur_days_max": 339.78,
+  "dur_zero": 2,
+  "types_top": [
+   [
+    "ip-dst",
+    1060
+   ]
+  ],
+  "fs_years": {
+   "2025": 127,
+   "2026": 933
+  },
+  "ids_flag": 1060,
+  "in_objects": 0
+ },
+ "93": {
+  "cases": 551,
+  "attributes": 79955,
+  "first_seen": 255,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 79700,
+  "first_only": 255,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2006-02-01T00:00:00",
+  "fs_max": "2023-11-13T00:00:00",
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "text",
+    12911
+   ],
+   [
+    "sha256",
+    6698
+   ],
+   [
+    "md5",
+    6477
+   ],
+   [
+    "comment",
+    6206
+   ],
+   [
+    "sha1",
+    5997
+   ],
+   [
+    "size-in-bytes",
+    5553
+   ],
+   [
+    "ssdeep",
+    5552
+   ],
+   [
+    "filename",
+    5214
+   ]
+  ],
+  "fs_years": {
+   "2006": 5,
+   "2015": 105,
+   "2019": 6,
+   "2020": 1,
+   "2022": 11,
+   "2023": 127
+  },
+  "ids_flag": 49499,
+  "in_objects": 62066
+ },
+ "94": {
+  "cases": 1283,
+  "attributes": 224292,
+  "first_seen": 2,
+  "last_seen": 1,
+  "both": 1,
+  "neither": 224290,
+  "first_only": 1,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2022-09-24T14:50:50",
+  "fs_max": "2024-06-01T00:00:00",
+  "ls_min": "2024-10-24T12:06:37",
+  "ls_max": "2024-10-24T12:06:37",
+  "dur_days_median": 760.89,
+  "dur_days_mean": 760.89,
+  "dur_days_p90": 760.89,
+  "dur_days_max": 760.89,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "domain",
+    29620
+   ],
+   [
+    "hostname",
+    22962
+   ],
+   [
+    "text",
+    20933
+   ],
+   [
+    "sha256",
+    20436
+   ],
+   [
+    "md5",
+    19954
+   ],
+   [
+    "sha1",
+    19376
+   ],
+   [
+    "ssdeep",
+    18126
+   ],
+   [
+    "size-in-bytes",
+    18126
+   ]
+  ],
+  "fs_years": {
+   "2022": 1,
+   "2024": 1
+  },
+  "ids_flag": 181972,
+  "in_objects": 141591
+ },
+ "95": {
+  "cases": 867,
+  "attributes": 70867,
+  "first_seen": 7118,
+  "last_seen": 7118,
+  "both": 7118,
+  "neither": 63749,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2008-01-02T05:56:25",
+  "fs_max": "2026-07-29T12:21:18",
+  "ls_min": "2016-12-28T10:35:47",
+  "ls_max": "2026-08-01T13:03:04",
+  "dur_days_median": 0.05,
+  "dur_days_mean": 184.98,
+  "dur_days_p90": 176.74,
+  "dur_days_max": 6671.32,
+  "dur_zero": 3270,
+  "types_top": [
+   [
+    "sha256",
+    7753
+   ],
+   [
+    "text",
+    7517
+   ],
+   [
+    "md5",
+    6966
+   ],
+   [
+    "domain",
+    6732
+   ],
+   [
+    "sha1",
+    6353
+   ],
+   [
+    "ssdeep",
+    5744
+   ],
+   [
+    "size-in-bytes",
+    5744
+   ],
+   [
+    "filename",
+    5521
+   ]
+  ],
+  "fs_years": {
+   "2008": 9,
+   "2009": 25,
+   "2010": 9,
+   "2012": 9,
+   "2013": 18,
+   "2014": 27,
+   "2015": 27,
+   "2016": 36,
+   "2017": 17,
+   "2019": 32,
+   "2020": 41,
+   "2021": 44,
+   "2022": 36,
+   "2023": 116,
+   "2024": 536,
+   "2025": 1075,
+   "2026": 5061
+  },
+  "ids_flag": 54967,
+  "in_objects": 45592
+ },
+ "96": {
+  "cases": 101,
+  "attributes": 7274,
+  "first_seen": 17,
+  "last_seen": 17,
+  "both": 17,
+  "neither": 7257,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2022-03-28T16:56:07",
+  "fs_max": "2024-01-17T14:33:07",
+  "ls_min": "2026-02-27T01:04:34",
+  "ls_max": "2026-02-28T06:55:03",
+  "dur_days_median": 1431.34,
+  "dur_days_mean": 1121.38,
+  "dur_days_p90": 1431.34,
+  "dur_days_max": 1431.34,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "md5",
+    884
+   ],
+   [
+    "text",
+    881
+   ],
+   [
+    "sha256",
+    865
+   ],
+   [
+    "sha1",
+    790
+   ],
+   [
+    "ssdeep",
+    745
+   ],
+   [
+    "size-in-bytes",
+    745
+   ],
+   [
+    "filename",
+    731
+   ],
+   [
+    "vhash",
+    693
+   ]
+  ],
+  "fs_years": {
+   "2022": 9,
+   "2024": 8
+  },
+  "ids_flag": 5229,
+  "in_objects": 6383
+ },
+ "97": {
+  "cases": 214,
+  "attributes": 43623,
+  "first_seen": 236,
+  "last_seen": 235,
+  "both": 235,
+  "neither": 43387,
+  "first_only": 1,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": "2019-05-23T18:52:04",
+  "fs_max": "2026-07-25T00:23:21",
+  "ls_min": "2024-08-23T16:35:52",
+  "ls_max": "2026-07-25T00:23:21",
+  "dur_days_median": 0.14,
+  "dur_days_mean": 171.39,
+  "dur_days_p90": 760.89,
+  "dur_days_max": 2019.98,
+  "dur_zero": 115,
+  "types_top": [
+   [
+    "md5",
+    5320
+   ],
+   [
+    "sha256",
+    5126
+   ],
+   [
+    "text",
+    4941
+   ],
+   [
+    "sha1",
+    4820
+   ],
+   [
+    "ssdeep",
+    4647
+   ],
+   [
+    "size-in-bytes",
+    4647
+   ],
+   [
+    "vhash",
+    4467
+   ],
+   [
+    "filename",
+    4234
+   ]
+  ],
+  "fs_years": {
+   "2019": 7,
+   "2020": 8,
+   "2022": 1,
+   "2024": 9,
+   "2026": 211
+  },
+  "ids_flag": 33306,
+  "in_objects": 36127
+ },
+ "98": {
+  "cases": 856,
+  "attributes": 90353,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 90353,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "text",
+    27598
+   ],
+   [
+    "datetime",
+    19627
+   ],
+   [
+    "domain",
+    10551
+   ],
+   [
+    "ip-dst",
+    9150
+   ],
+   [
+    "md5",
+    8520
+   ],
+   [
+    "sha256",
+    8520
+   ],
+   [
+    "url",
+    5393
+   ],
+   [
+    "port",
+    682
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 39188,
+  "in_objects": 90353
+ },
+ "99": {
+  "cases": 60,
+  "attributes": 14427,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 14427,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-src",
+    14427
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 14427,
+  "in_objects": 0
+ },
+ "100": {
+  "cases": 1,
+  "attributes": 2913,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 2913,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    2913
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 2913,
+  "in_objects": 0
+ },
+ "101": {
+  "cases": 1,
+  "attributes": 734,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 734,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    734
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 734,
+  "in_objects": 0
+ },
+ "102": {
+  "cases": 365,
+  "attributes": 97979,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 97979,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    45643
+   ],
+   [
+    "domain",
+    39421
+   ],
+   [
+    "ip-dst",
+    7819
+   ],
+   [
+    "sha256",
+    3002
+   ],
+   [
+    "md5",
+    2094
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 97979,
+  "in_objects": 0
+ },
+ "103": {
+  "cases": 1,
+  "attributes": 20000,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 20000,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "ip-dst",
+    20000
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 20000,
+  "in_objects": 0
+ },
+ "104": {
+  "cases": 1,
+  "attributes": 20000,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 20000,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "domain",
+    20000
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 20000,
+  "in_objects": 0
+ },
+ "105": {
+  "cases": 1,
+  "attributes": 10000,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 10000,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    10000
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 10000,
+  "in_objects": 0
+ },
+ "106": {
+  "cases": 1,
+  "attributes": 20000,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 20000,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "sha1",
+    10991
+   ],
+   [
+    "md5",
+    6300
+   ],
+   [
+    "sha256",
+    2709
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 20000,
+  "in_objects": 0
+ },
+ "107": {
+  "cases": 1,
+  "attributes": 1160,
+  "first_seen": 0,
+  "last_seen": 0,
+  "both": 0,
+  "neither": 1160,
+  "first_only": 0,
+  "last_only": 0,
+  "inverted": 0,
+  "fs_min": null,
+  "fs_max": null,
+  "ls_min": null,
+  "ls_max": null,
+  "dur_days_median": null,
+  "dur_days_mean": null,
+  "dur_days_p90": null,
+  "dur_days_max": null,
+  "dur_zero": 0,
+  "types_top": [
+   [
+    "url",
+    1160
+   ]
+  ],
+  "fs_years": {},
+  "ids_flag": 1160,
+  "in_objects": 0
+ },
+ "_totals": {
+  "cases": 17045,
+  "objects": 125354,
+  "attributes": 3521213
+ }
+}
