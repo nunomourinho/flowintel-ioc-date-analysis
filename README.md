@@ -79,4 +79,9 @@ CREATE INDEX ix_misp__attribute_case_misp_object_id ON misp__attribute (case_mis
 
 Proxmox VE 9.2 VM with 4 vCPU and 8 GB RAM, running Ubuntu 24.04.5 LTS. Flowintel ran in development launch mode (`./launch.sh -l`) with PostgreSQL 16 and Valkey 7.2. Full details are in section 3 of the report.
 
-The IoC values summarised here come from public feeds. Each feed is subject to its provider's terms.
+## License
+
+- **Scripts** (`tools/`, and the code files in `report-builder/`: `*.py`, `*.js`, `package*.json`) are licensed under the [MIT License](LICENSE).
+- **Report and data** (`report/`, `data/`, and `report-builder/facts.json`) are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-CC-BY-4.0.txt). Attribute them as: *"Flowintel – IoC start/end dates per threat-intelligence source", Nuno Mourinho, 2026, CC BY 4.0*.
+
+The threat-intelligence feeds are not covered by these licences. The IoC values summarised here come from public feeds, and each feed remains subject to its provider's terms.
